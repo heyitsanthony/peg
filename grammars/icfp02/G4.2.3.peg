@@ -1,0 +1,14 @@
+package icfp02
+
+type G4_2_3 Peg {}
+
+S <- R / L '=' R
+R <- A / A EQ A / A NE A
+A <- P / P '+' P / P '-' P
+P <- ID / '(' R ')' / P '[' A ']'
+L <- ID / '(' L ')' / L '[' A ']'
+
+# "[even with terminals] this grammar is not LR(k) for any k"
+ID <- 'id'
+EQ <- 'eq'
+NE <- 'ne'

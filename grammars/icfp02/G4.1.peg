@@ -1,0 +1,7 @@
+package icfp02
+
+type G4_1 Peg {}
+
+S <- A / B
+A <- 'x' A 'y' / 'xzy'
+B <- 'x' B 'yy' / 'xzyy'

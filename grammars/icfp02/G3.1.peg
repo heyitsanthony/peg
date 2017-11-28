@@ -1,0 +1,10 @@
+package icfp02
+
+type G3_1 Peg {}
+
+Additive <-	Additive '+' Multitive /
+		Additive '-' Multitive	/
+		Multitive
+Multitive <- Primary '*' Multitive / Primary
+Primary <- '(' Additive ')' / Decimal
+Decimal <- [0-9]

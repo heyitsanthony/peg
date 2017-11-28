@@ -1,0 +1,10 @@
+package icfp02
+
+type G2_2 Peg {}
+
+Additive <- Multitive AdditiveSuffix
+AdditiveSuffix <- '+' Additive / ()
+Multitive <- Primary MultitiveSuffix
+MultitiveSuffix <- '*' Multitive / ()
+Primary <- '(' Additive ')' / Decimal
+Decimal <- [0-9]

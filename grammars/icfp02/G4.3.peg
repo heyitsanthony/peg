@@ -1,0 +1,5 @@
+package icfp02
+
+type G4_3 Peg {}
+
+S <- 'x' S 'x' / 'x'

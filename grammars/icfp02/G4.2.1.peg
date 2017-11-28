@@ -1,0 +1,12 @@
+package icfp02
+
+type G4_2_1 Peg {}
+
+S <- R / ID '=' R
+R <- A / A EQ A / A NE A
+A <- P / P '+' P / P '-' P
+P <- ID / '(' R ')'
+
+ID <- 'id'
+EQ <- 'eq'
+NE <- 'ne'
